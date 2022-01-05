@@ -13,7 +13,7 @@ const web3 = new Web3('wss://apis.ankr.com/wss/b5bbebf90b3b4db8a6bb1ab5082412d5/
 //                Your Settings
 // --------------------------------------------------------------------------
 console.log(`Loading Bot Settings`);
-const private = "6db56a447e00d2d645452e603c42896b182274a2fd14d958d7fe9652fd7163c5"; // Private Key of Sender/Receiver Address
+const private = "YOUR-PRIVATE-KEY"; // Private Key of Sender/Receiver Address
 const Input_Address = "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"; // Contract Address of Token with which you will buy (ex. WBNB)
 const Output_Address = "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"; // Contract Address of the token you want to snipe (ex. CAKE)
 const amount_in = "0.0031"; // Amount of the Input Token (0.01 WBNB)
@@ -21,10 +21,6 @@ const slippage = "2"; // Slippage in percents
 gas_price = '10' 
 gas_limit = 200000
 
-
-
-
-// Variables derived - Do not change
 const router_address = web3.utils.toChecksumAddress("0x10ed43c718714eb63d5aa57b78b54704e256024e"); // Pancake Router Address: v2: 0x10ed43c718714eb63d5aa57b78b54704e256024e v1: 0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F
 const factory_address = web3.utils.toChecksumAddress('0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'); // Pancake Factory Address
 const { address: admin } = web3.eth.accounts.wallet.add(private);
